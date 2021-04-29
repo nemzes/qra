@@ -1,12 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
+import { Provider } from 'react-redux';
+
+import Yeti from './components/yeti';
 import reportWebVitals from './reportWebVitals';
+import store from './state';
+import './index.css';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Provider store={store}>
+      <Yeti />
+    </Provider>
   </React.StrictMode>,
   document.getElementById('root')
 );

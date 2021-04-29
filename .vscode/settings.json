@@ -1,0 +1,8 @@
+{
+  "editor.formatOnSave": true,
+  "eslint.packageManager": "yarn",
+  "files.exclude": {
+    "build": true,
+    "node_modules": true
+  }
+}

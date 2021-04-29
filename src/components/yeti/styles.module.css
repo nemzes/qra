@@ -1,0 +1,33 @@
+.yeti {
+  --width-border: 2px;
+  aspect-ratio: 4/3;
+  background-image: url('https://cdn.dribbble.com/users/950308/screenshots/2366198/attachments/454056/yeti_mine-02.jpg?compress=1&resize=400x300');
+  background-size: cover;
+  border: var(--width-border) solid var(--color-border);
+  position: relative;
+  width: 20vw;
+}
+
+.yeti__spaghetti {
+  animation: move alternate 5s infinite;
+  aspect-ratio: 2/1;
+  background-image: url('https://pngimg.com/uploads/spaghetti/spaghetti_PNG6.png');
+  background-size: cover;
+  position: absolute;
+  width: 10vw;
+}
+
+@keyframes move {
+  0% {
+    top: 0;
+    left: 0;
+  }
+  50% {
+    top: 40%;
+    left: 80%;
+  }
+  100% {
+    top: 90%;
+    left: 0;
+  }
+}
